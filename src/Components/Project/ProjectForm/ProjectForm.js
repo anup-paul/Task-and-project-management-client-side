@@ -47,7 +47,7 @@ const ProjectForm = () => {
                     </div>
                     <div className="">
                         <label for="validationCustom06" className="form-label">Team member</label>
-                        <input type="text" className="form-control" id="validationCustom06" placeholder="Enter Team member" />
+                        <textarea rows="4" type="text" className="form-control" id="validationCustom06" placeholder="Enter Team member" />
                     </div>
                     <div className="">
                         <label for="validationCustom07" className="form-label">Clients</label>
@@ -61,6 +61,10 @@ const ProjectForm = () => {
                     <div className="">
                         <label for="validationCustom09" className="form-label">Project Description</label>
                         <textarea rows="4" type="text" className="form-control" id="validationCustom09" placeholder="Enter Project Description" />
+                    </div>
+                    <div className="">
+                        <label for="validationCustom010" className="form-label">Project Image</label>
+                        <input type="file" className="form-control" id="validationCustom010" placeholder="Enter Project Description" />
                     </div>
 
                     <div className="d-flex justify-content-end mt-3">

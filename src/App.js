@@ -13,6 +13,9 @@ import TaskForm from './Components/Task/TaskForm/TaskForm.js'
 import TeamForm from './Components/Team/TeamForm/TeamForm';
 import EmployeeForm from './Components/Employee/EmployeeForm/EmployeeForm';
 import ProjectCategoryForm from './Components/ProjectCategory/ProjectCategoryForm/ProjectCategoryForm';
+import ProjectList from './Components/Project/Projectlist/ProjectList';
+import ProjectCategoryList from './Components/ProjectCategory/ProjectCategorylist/ProjectCategoryList';
+import ClientList from './Components/Clients/Clientlist/ClientList';
 
 
 function App() {
@@ -28,12 +31,21 @@ function App() {
             <Body></Body>
           </Route>
           <Route path="/project" >
+            <ProjectList></ProjectList>
+          </Route>
+          <Route path="/addProjectForm">
             <ProjectForm></ProjectForm>
           </Route>
           <Route path="/projectCategory">
+            <ProjectCategoryList></ProjectCategoryList>
+          </Route>
+          <Route path="/addProjectCategoryForm" >
             <ProjectCategoryForm></ProjectCategoryForm>
           </Route>
           <Route path="/client" >
+            <ClientList></ClientList>
+          </Route>
+          <Route path="/addClientForm" >
             <ClientForm></ClientForm>
           </Route>
           <Route path="/task" >
