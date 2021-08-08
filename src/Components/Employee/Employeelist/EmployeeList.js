@@ -1,41 +1,21 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
-
-const ProjectList = () => {
-
-
-    let history = useHistory()
-
-    const handleAddProject = (e) => {
-        e.preventDefault();
-        history.push("/addProjectForm")
-        console.log("clicked");
-    }
-
+const EmployeeList = () => {
     return (
         <div className="d-flex justify-content-center" >
             <div className="row w-75 mt-3" >
-                <div className="d-flex justify-content-end" >
-                    <button
-                        className="btn btn-outline-primary"
-                        onClick={(e) => handleAddProject(e)}
-                    > <FontAwesomeIcon icon={faPlus} /> Add Project
 
-                    </button>
-                </div>
                 <table className="table mt-3">
                     <thead className="table-primary" >
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Company Logo</th>
-                            <th scope="col">Project Name</th>
-                            <th scope="col">Assign</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">End Date</th>
-                            <th scope="col">Client Name</th>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Employee ID</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Email</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -46,9 +26,8 @@ const ProjectList = () => {
                             <td>Otto</td>
                             <td>@mdo</td>
                             <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -56,9 +35,8 @@ const ProjectList = () => {
                             <td>Thornton</td>
                             <td>@fat</td>
                             <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
                         </tr>
 
 
@@ -69,4 +47,4 @@ const ProjectList = () => {
     );
 };
 
-export default ProjectList;
+export default EmployeeList;

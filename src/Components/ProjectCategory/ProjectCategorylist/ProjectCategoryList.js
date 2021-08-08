@@ -28,23 +28,20 @@ const ProjectCategoryList = () => {
                     <thead className="table-primary" >
                         <tr>
                             <th scope="col"></th>
-                            <th   scope="col">Project Category Name</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
+                            <th scope="col">Project Category Name</th>
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
-                            <td><FontAwesomeIcon icon={faEdit} style={{color:"blue"}} /></td>
-                            <td><FontAwesomeIcon icon={faTrashAlt} style={{color:"red"}} /></td>
+                            <td>Mark</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Jacob</td>
-                            <td><FontAwesomeIcon icon={faEdit} style={{color:"blue"}} /></td>
-                            <td><FontAwesomeIcon icon={faTrashAlt} style={{color:"red"}} /></td>
+                            <td>Mark</td>
                         </tr>
                         
                         

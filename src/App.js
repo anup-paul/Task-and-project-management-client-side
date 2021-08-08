@@ -16,6 +16,9 @@ import ProjectCategoryForm from './Components/ProjectCategory/ProjectCategoryFor
 import ProjectList from './Components/Project/Projectlist/ProjectList';
 import ProjectCategoryList from './Components/ProjectCategory/ProjectCategorylist/ProjectCategoryList';
 import ClientList from './Components/Clients/Clientlist/ClientList';
+import EmployeeList from './Components/Employee/Employeelist/EmployeeList';
+import TeamList from './Components/Team/TeamList/TeamList';
+import TaskList from './Components/Task/TaskList/TaskList';
 
 
 function App() {
@@ -30,33 +33,45 @@ function App() {
           <Route path="/home" >
             <Body></Body>
           </Route>
-          <Route path="/project" >
-            <ProjectList></ProjectList>
-          </Route>
-          <Route path="/addProjectForm">
-            <ProjectForm></ProjectForm>
-          </Route>
-          <Route path="/projectCategory">
-            <ProjectCategoryList></ProjectCategoryList>
-          </Route>
-          <Route path="/addProjectCategoryForm" >
-            <ProjectCategoryForm></ProjectCategoryForm>
-          </Route>
-          <Route path="/client" >
-            <ClientList></ClientList>
-          </Route>
-          <Route path="/addClientForm" >
-            <ClientForm></ClientForm>
-          </Route>
-          <Route path="/task" >
-            <TaskForm></TaskForm>
-          </Route>
-          <Route path="/team" >
-            <TeamForm></TeamForm>
-          </Route>
-          <Route path="/employee" >
+          <Route path="/addEmployee" >
             <EmployeeForm></EmployeeForm>
           </Route>
+          <Route path="/employees" >
+            <EmployeeList></EmployeeList>
+          </Route>
+          <Route path="/addTeam" >
+            <TeamForm></TeamForm>
+          </Route>
+          <Route path="/teamList" >
+            <TeamList></TeamList>
+          </Route>
+          <Route path="/projects" >
+            <ProjectList></ProjectList>
+          </Route>
+          <Route path="/addProject">
+            <ProjectForm></ProjectForm>
+          </Route>
+          <Route path="/projectCategoryList">
+            <ProjectCategoryList></ProjectCategoryList>
+          </Route>
+          <Route path="/addProjectCategory" >
+            <ProjectCategoryForm></ProjectCategoryForm>
+          </Route>
+          <Route path="/addTask" >
+            <TaskForm></TaskForm>
+          </Route>
+          <Route path="/taskList">
+            <TaskList></TaskList>
+          </Route>
+          <Route path="/clients" >
+            <ClientList></ClientList>
+          </Route>
+          <Route path="/addClient" >
+            <ClientForm></ClientForm>
+          </Route>
+          
+          
+          
         </Switch>
       </Router>
     </>

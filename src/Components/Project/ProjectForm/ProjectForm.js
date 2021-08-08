@@ -51,7 +51,7 @@ const ProjectForm = () => {
                     </div>
                     <div className="">
                         <label for="validationCustom07" className="form-label">Clients</label>
-                        <input type="text" className="form-control" id="validationCustom07" placeholder="Enter Clients"/>
+                        <textarea rows="4" type="text" className="form-control" id="validationCustom07" placeholder="Enter Clients"/>
                     </div>
                     <div className="">
                         <label for="validationCustom08" className="form-label">Sell Value</label>
@@ -63,7 +63,7 @@ const ProjectForm = () => {
                         <textarea rows="4" type="text" className="form-control" id="validationCustom09" placeholder="Enter Project Description" />
                     </div>
                     <div className="">
-                        <label for="validationCustom010" className="form-label">Project Image</label>
+                        <label for="validationCustom010" className="form-label">Company Logo</label>
                         <input type="file" className="form-control" id="validationCustom010" placeholder="Enter Project Description" />
                     </div>
 

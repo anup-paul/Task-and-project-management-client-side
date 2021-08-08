@@ -9,7 +9,7 @@ const ClientList = () => {
 
     const handleAddClient = (e) => {
         e.preventDefault();
-        history.push("/addClientForm")
+        history.push("/addClient")
         console.log("clicked");
     }
 
@@ -29,11 +29,10 @@ const ClientList = () => {
                     <tr>
                         <th scope="col"></th>
                         <th scope="col">Client Name</th>
-                        <th scope="col">Client Address</th>
-                        <th scope="col">Phone</th>
+                        <th scope="col">Phone Number</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Action</th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -43,8 +42,7 @@ const ClientList = () => {
                         <td>Otto</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
-                        <td><FontAwesomeIcon icon={faEdit} style={{color:"blue"}} /></td>
-                        <td><FontAwesomeIcon icon={faTrashAlt} style={{color:"red"}} /></td>
+                        <td>Otto</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
@@ -52,8 +50,7 @@ const ClientList = () => {
                         <td>Thornton</td>
                         <td>@fat</td>
                         <td>@mdo</td>
-                        <td><FontAwesomeIcon icon={faEdit} style={{color:"blue"}} /></td>
-                        <td><FontAwesomeIcon icon={faTrashAlt} style={{color:"red"}} /></td>
+                        <td>Thornton</td>
                     </tr>
                     
                     
