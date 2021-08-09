@@ -36,7 +36,7 @@ const AdministrativeTaskList = () => {
                                 <th scope="col">No.</th>
                                 <th scope="col">Administrative Task Name</th>
                                 <th scope="col">Assign Member</th>
-                                <th scope="col">Status</th>
+                                <th className="text-center" scope="col">Status</th>
                                 <th className="text-center" scope="col">Action</th>
                             </tr>
                         </thead>
@@ -45,7 +45,14 @@ const AdministrativeTaskList = () => {
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">pending</option>
+                                        <option value="1">progress</option>
+                                        <option value="1">complete</option>
+                                    </select>
+                                </td>
                                 <td>
                                     <select className="form-select" aria-label="Default select example">
                                         <option selected>Action Type</option>
@@ -57,7 +64,14 @@ const AdministrativeTaskList = () => {
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">pending</option>
+                                        <option value="1">progress</option>
+                                        <option value="1">complete</option>
+                                    </select>
+                                </td>
                                 <td>
                                     <select className="form-select" aria-label="Default select example">
                                         <option selected>Action Type</option>
