@@ -58,8 +58,11 @@ const Dashboard = () => {
                                     <li><Link to="/AdministrativeTaskList" className="dropdown-item" >Administrative Task List</Link></li>
                                     <li><Link to="/addAdministrativeTask" className="dropdown-item" >Add Administrative Task</Link></li>
                                     <li><hr class="dropdown-divider" /></li>
-                                    <li><Link className="dropdown-item" >Temporary Task</Link></li>
-                                    <li><Link className="dropdown-item" >Permanent Task</Link></li>
+                                    <li><Link to="/temporaryTaskList" className="dropdown-item" >Temporary Task List</Link></li>
+                                    <li><Link to="/addTemporaryTask" className="dropdown-item" >Add Temporary Task</Link></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><Link to="/permanentTaskList" className="dropdown-item" >Permanent Task List</Link></li>
+                                    <li><Link to="/addPermanentTask" className="dropdown-item" >Add Permanent Task</Link></li>
 
                                 </ul>
                             </li>

@@ -23,6 +23,10 @@ import AdministrativeWorkList from './Components/AdministrativeWork/Administrati
 import AdministrativeWorkForm from './Components/AdministrativeWork/AdministrativeWorkForm/AdministrativeWorkForm';
 import AdministrativeTaskList from './Components/AdministrativeTask/AdministrativeTaskList/AdministrativeTaskList';
 import AdministrativeTaskForm from './Components/AdministrativeTask/AdministrativeTaskForm/AdministrativeTaskForm';
+import TemporaryTaskList from './Components/TemporaryTask/TeamporaryTaskList/TemporaryTaskList';
+import TemporaryTaskForm from './Components/TemporaryTask/TemporaryTaskFrom/TemporaryTaskForm';
+import PermanentTaskList from './Components/PermanentTask/PermanenTaskList/PermanentTaskList';
+import PermanentTaskForm from './Components/PermanentTask/PermanentTaskForm/PermanentTaskForm';
 
 
 function App() {
@@ -78,6 +82,18 @@ function App() {
           </Route>
           <Route path="/addAdministrativeTask">
             <AdministrativeTaskForm></AdministrativeTaskForm>
+          </Route>
+          <Route path="/temporaryTaskList">
+            <TemporaryTaskList></TemporaryTaskList>
+          </Route>
+          <Route path="/addTemporaryTask">
+            <TemporaryTaskForm></TemporaryTaskForm>
+          </Route>
+          <Route path="/permanentTaskList">
+            <PermanentTaskList></PermanentTaskList>
+          </Route>
+          <Route path="/addPermanentTask">
+            <PermanentTaskForm></PermanentTaskForm>
           </Route>
           <Route path="/clients" >
             <ClientList></ClientList>
