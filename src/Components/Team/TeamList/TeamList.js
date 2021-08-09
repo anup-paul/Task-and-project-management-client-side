@@ -45,7 +45,7 @@ const TeamList = () => {
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Mark</td>
-                                <td>Otto (Roll)</td>
+                                <td>Otto (Role)</td>
                                 
                                 <td>
                                     <select className="form-select" aria-label="Default select example">
@@ -58,7 +58,7 @@ const TeamList = () => {
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
-                                <td>Thornton (Roll)</td>
+                                <td>Thornton (Role)</td>
                                 
                                 <td>
                                     <select className="form-select" aria-label="Default select example">

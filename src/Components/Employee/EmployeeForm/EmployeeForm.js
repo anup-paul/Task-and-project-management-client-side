@@ -30,11 +30,11 @@ const EmployeeForm = () => {
                     </div>
 
                     <div className="">
-                        <label for="validationCustom04" className="form-label">Employee Phone number</label>
+                        <label for="validationCustom04" className="form-label">Employee Phone number</label><b style={{color:"red"}} >*</b>
                         <input type="number" className="form-control" id="validationCustom04" placeholder="Enter employee Phone number" />
                     </div>
                     <div className="">
-                        <label for="validationCustom05" className="form-label">Employee email</label>
+                        <label for="validationCustom05" className="form-label">Employee email</label><b style={{color:"red"}} >*</b>
                         <input type="email" className="form-control" id="validationCustom05" placeholder="Enter employee email" />
                     </div>
 
