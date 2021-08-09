@@ -11,61 +11,78 @@ const ProjectList = () => {
 
     const handleAddProject = (e) => {
         e.preventDefault();
-        history.push("/addProjectForm")
+        history.push("/addProject")
         console.log("clicked");
     }
 
     return (
-        <div className="d-flex justify-content-center" >
-            <div className="row w-75 mt-3" >
-                <div className="d-flex justify-content-end" >
-                    <button
-                        className="btn btn-outline-primary"
-                        onClick={(e) => handleAddProject(e)}
-                    > <FontAwesomeIcon icon={faPlus} /> Add Project
-
-                    </button>
-                </div>
-                <table className="table mt-3">
-                    <thead className="table-primary" >
-                        <tr>
-                            <th scope="col">No.</th>
-                            <th scope="col">Company Logo</th>
-                            <th scope="col">Project Name</th>
-                            <th scope="col">Assign</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">End Date</th>
-                            <th scope="col">Client Name</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                        </tr>
-
-
-                    </tbody>
-                </table>
+        <>
+            <div>
+                <h2 className="text-center my-4" >Project List</h2>
             </div>
-        </div>
+            <div className="d-flex justify-content-center" >
+                <div className="row w-75 mt-3" >
+                    <div className="d-flex justify-content-between" >
+                        <form className="d-flex">
+                            <input className="form-control w-75 me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                        <button
+                            className="btn btn-outline-primary"
+                            onClick={(e) => handleAddProject(e)}
+                        > <FontAwesomeIcon icon={faPlus} /> Add Project
+                        </button>
+                    </div>
+                    <table className="table mt-3">
+                        <thead className="table-primary" >
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Client Logo</th>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Assign Member</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">End Date</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>logo <br />client name</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">Edit</option>
+                                        <option value="2">Archive</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>logo <br />client name</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@mdo</td>
+                                <td>Mark</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">Edit</option>
+                                        <option value="2">Archive</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </>
     );
 };
 

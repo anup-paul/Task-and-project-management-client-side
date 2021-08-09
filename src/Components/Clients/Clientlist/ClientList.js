@@ -14,50 +14,59 @@ const ClientList = () => {
     }
 
     return (
-        <div className="d-flex justify-content-center" >
-        <div className="row w-75 mt-3" >
-            <div className="d-flex justify-content-end" >
-                <button
-                    className="btn btn-outline-primary"
-                    onClick={(e)=>handleAddClient(e)}
-                > <FontAwesomeIcon icon={faPlus} /> Add Client
-                     
-                </button>
+        <>
+            <div>
+                <h2 className="text-center my-4" >Client List</h2>
             </div>
-            <table className="table mt-3">
-                <thead className="table-primary" >
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Client Name</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Action</th> 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                        <td>Otto</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@mdo</td>
-                        <td>Thornton</td>
-                    </tr>
-                    
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
+            <div className="d-flex justify-content-center" >
+                <div className="row w-75 mt-3" >
+                    <div className="d-flex justify-content-between" >
+                        <form className="d-flex">
+                            <input className="form-control w-75 me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button className="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                        <button
+                            className="btn btn-outline-primary"
+                            onClick={(e) => handleAddClient(e)}
+                        > <FontAwesomeIcon icon={faPlus} /> Add Client
+
+                        </button>
+                    </div>
+                    <table className="table mt-3">
+                        <thead className="table-primary" >
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Client Name</th>
+                                <th scope="col">Phone Number</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@mdo</td>
+                                <td>Thornton</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </>
     );
 };
 

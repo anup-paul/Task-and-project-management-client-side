@@ -19,6 +19,10 @@ import ClientList from './Components/Clients/Clientlist/ClientList';
 import EmployeeList from './Components/Employee/Employeelist/EmployeeList';
 import TeamList from './Components/Team/TeamList/TeamList';
 import TaskList from './Components/Task/TaskList/TaskList';
+import AdministrativeWorkList from './Components/AdministrativeWork/AdministrativeWorkList/AdministrativeWorkList';
+import AdministrativeWorkForm from './Components/AdministrativeWork/AdministrativeWorkForm/AdministrativeWorkForm';
+import AdministrativeTaskList from './Components/AdministrativeTask/AdministrativeTaskList/AdministrativeTaskList';
+import AdministrativeTaskForm from './Components/AdministrativeTask/AdministrativeTaskForm/AdministrativeTaskForm';
 
 
 function App() {
@@ -39,7 +43,7 @@ function App() {
           <Route path="/employees" >
             <EmployeeList></EmployeeList>
           </Route>
-          <Route path="/addTeam" >
+          <Route path="/makeTeam" >
             <TeamForm></TeamForm>
           </Route>
           <Route path="/teamList" >
@@ -57,11 +61,23 @@ function App() {
           <Route path="/addProjectCategory" >
             <ProjectCategoryForm></ProjectCategoryForm>
           </Route>
+          <Route path="/AdministrativeWorks" >
+            <AdministrativeWorkList></AdministrativeWorkList>
+          </Route>
+          <Route path="/addAdministrativeWork">
+            <AdministrativeWorkForm></AdministrativeWorkForm>
+          </Route>
           <Route path="/addTask" >
             <TaskForm></TaskForm>
           </Route>
           <Route path="/taskList">
             <TaskList></TaskList>
+          </Route>
+          <Route path="/AdministrativeTaskList">
+            <AdministrativeTaskList></AdministrativeTaskList>
+          </Route>
+          <Route path="/addAdministrativeTask">
+            <AdministrativeTaskForm></AdministrativeTaskForm>
           </Route>
           <Route path="/clients" >
             <ClientList></ClientList>

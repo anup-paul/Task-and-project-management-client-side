@@ -21,27 +21,43 @@ const Dashboard = () => {
                                     <li><Link className="dropdown-item" >Former Employee</Link></li>
                                     <li><hr class="dropdown-divider" /></li>
                                     <li><Link to="/teamList" className="dropdown-item" >Team List</Link></li>
-                                    <li><Link to="/addTeam" className="dropdown-item" >Make Team</Link></li>
+                                    <li><Link to="/makeTeam" className="dropdown-item" >Make Team</Link></li>
                                 </ul>
                             </li>
 
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle active" data-bs-toggle="dropdown" role="button" aria-expanded="false"><b>Project</b></Link>
                                 <ul className="dropdown-menu btn btn-primary">
-                                    <li><Link to="/projectCategoryList" className="dropdown-item" >Project Category list</Link></li>
-                                    <li><Link to="/addProjectCategory" className="dropdown-item" >Add Project Category</Link></li>
                                     <li><Link to="/projects" className="dropdown-item" >Project List</Link></li>
                                     <li><Link to="/addProject" className="dropdown-item" >Add Project</Link></li>
+                                    <li><Link to="/projectCategoryList" className="dropdown-item" >Project Category list</Link></li>
+                                    <li><Link to="/addProjectCategory" className="dropdown-item" >Add Project Category</Link></li>
                                     <li><Link className="dropdown-item" >Archive Project List</Link></li>
 
                                 </ul>
                             </li>
 
                             <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle active" data-bs-toggle="dropdown" role="button" aria-expanded="false"><b>Administrative Work</b></Link>
+                                <ul className="dropdown-menu btn btn-primary">
+                                    <li><Link to="/AdministrativeWorks" className="dropdown-item" >Administrative Work List</Link></li>
+                                    <li><Link to="/addAdministrativeWork" className="dropdown-item" >Add Administrative Work</Link></li>
+                                    <li><Link className="dropdown-item" >Archive Administrative Work List</Link></li>
+
+                                </ul>
+                            </li>
+
+
+                            <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle active" data-bs-toggle="dropdown" role="button" aria-expanded="false"><b>Task</b></Link>
                                 <ul className="dropdown-menu btn btn-primary">
-                                    <li><Link to="/addTask" className="dropdown-item" >Add Task</Link></li>
+
                                     <li><Link to="/taskList" className="dropdown-item" >Task List</Link></li>
+                                    <li><Link to="/addTask" className="dropdown-item" >Add Task</Link></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><Link to="/AdministrativeTaskList" className="dropdown-item" >Administrative Task List</Link></li>
+                                    <li><Link to="/addAdministrativeTask" className="dropdown-item" >Add Administrative Task</Link></li>
+                                    <li><hr class="dropdown-divider" /></li>
                                     <li><Link className="dropdown-item" >Temporary Task</Link></li>
                                     <li><Link className="dropdown-item" >Permanent Task</Link></li>
 

@@ -3,22 +3,19 @@ import React from 'react';
 const ProjectForm = () => {
     return (
         <div>
-            <div>
-                <div className="dropdown d-flex justify-content-end m-3">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                       Project Category
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">E-Commerce</a></li>
-                        <li><a class="dropdown-item" href="#">School Management</a></li>
-                        <li><a class="dropdown-item" href="#">Travel Agency</a></li>
-                    </ul>
-                </div>
-            </div>
             <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
+                    <div>
+                        <label for="validationCustom11" className="form-label">Project Category</label>
+                        <select className="form-select" id="validationCustom11" aria-label="Default select example">
+                            <option selected> Project Category</option>
+                            <option value="1">E-Commerce Project</option>
+                            <option value="2">School Management Project</option>
+                            <option value="3">Travel Agency Project</option>
+                        </select>
+                    </div>
                     <div className="">
-                        <label for="validationCustom01" className="form-label">Project Name <b style={{color:"red"}} >*</b></label>
+                        <label for="validationCustom01" className="form-label">Project Name <b style={{ color: "red" }} >*</b></label>
                         <input type="text" className="form-control" id="validationCustom01" placeholder="Enter Project Name" required />
                         <div className="valid-feedback">
                             Looks good!
@@ -51,10 +48,10 @@ const ProjectForm = () => {
                     </div>
                     <div className="">
                         <label for="validationCustom07" className="form-label">Clients</label>
-                        <textarea rows="4" type="text" className="form-control" id="validationCustom07" placeholder="Enter Clients"/>
+                        <textarea rows="4" type="text" className="form-control" id="validationCustom07" placeholder="Enter Clients" />
                     </div>
                     <div className="">
-                        <label for="validationCustom08" className="form-label">Sell Value</label>
+                        <label for="validationCustom08" className="form-label">Value</label>
                         <input type="number" className="form-control" id="validationCustom08" placeholder="Enter Sell value" />
                     </div>
 

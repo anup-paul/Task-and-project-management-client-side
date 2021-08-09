@@ -7,7 +7,7 @@ const TaskForm = () => {
             <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
                     <div>
-                        <label for="validationCustom01" className="form-label">Add Task</label>
+                        <label for="validationCustom01" className="form-label">Add Project</label>
                         <select className="form-select" id="validationCustom01" aria-label="Default select example">
                             <option selected> select project</option>
                             <option value="1">project One</option>
@@ -37,7 +37,10 @@ const TaskForm = () => {
                         <label for="validationCustom05" className="form-label">End date and Time</label>
                         <input type="date" className="form-control" id="validationCustom05" placeholder="Start date and time" />
                     </div>
-
+                    <div className="">
+                        <label for="validationCustom06" className="form-label">Attach File</label>
+                        <input type="file" className="form-control" id="validationCustom06" placeholder="Enter Project Description" />
+                    </div>
                     <div className="d-flex justify-content-end mt-3">
                         <button className="btn btn-primary" type="submit">Save</button>
                     </div>

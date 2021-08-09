@@ -15,46 +15,25 @@ const TeamForm = () => {
                             Looks good!
                         </div>
                     </div>
-                    <div>
-                        <label for="validationCustom02" className="form-label">Team Leader</label>
-                        <select className="form-select" id="validationCustom02" aria-label="Default select example">
-                            <option selected> select Team Leader</option>
-                            <option value="1">Employee One</option>
-                            <option value="2">Employee Two</option>
-                            <option value="3">Employee Three</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="validationCustom02" className="form-label">Team Supervisor</label>
-                        <select className="form-select" id="validationCustom02" aria-label="Default select example">
-                            <option selected> select Team Supervisor</option>
-                            <option value="1">Employee One</option>
-                            <option value="2">Employee Two</option>
-                            <option value="3">Employee Three</option>
-                        </select>
-                    </div>
-
-                    <div  >
+                    <div className="d-flex justify-content-between" >
                         <div>
-                            <div className="d-flex" >
-                                <div>
-                                    <label for="validationCustom02" className="form-label">Team member</label>
-                                </div>
-                                <div>
-                                    <button className="btn" ><FontAwesomeIcon style={{color:"red"}} icon={faPlus} /></button>
-                                </div>
-                            </div>
-                            <select className="form-select" id="validationCustom02" aria-label="Default select example">
-                                <option selected> select Team member</option>
+                            <label for="validationCustom02" className="form-label">Select team member</label>
+                            <select className="form-select " id="validationCustom02" aria-label="Default select example">
+                                <option selected> Select team member</option>
                                 <option value="1">Employee One</option>
                                 <option value="2">Employee Two</option>
                                 <option value="3">Employee Three</option>
                             </select>
                         </div>
+                        <div className="">
+                            <label for="validationCustom01" className="form-label">Employee Roll</label>
+                            <input type="text" className="form-control" id="validationCustom01" placeholder="Enter Employee Role" required />
 
+                        </div>
+                        <div>
+                            <button className="btn" ><FontAwesomeIcon style={{ color: "red" }} icon={faPlus} /></button>
+                        </div>
                     </div>
-
                     <div className="d-flex justify-content-end mt-3">
                         <button className="btn btn-primary" type="submit">Save</button>
                     </div>
