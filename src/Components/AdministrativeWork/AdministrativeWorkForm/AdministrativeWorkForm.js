@@ -3,12 +3,12 @@ import React from 'react';
 const AdministrativeWorkForm = () => {
     return (
         <div>
-             <div className="d-flex justify-content-center my-3" >
+            <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
-                    
+                    <h3 className="text-center mb-4" ><b>Add Administrative Work</b></h3>
                     <div className="">
-                        <label for="validationCustom01" className="form-label">AdministrativeWork Name <b style={{ color: "red" }} >*</b></label>
-                        <input type="text" className="form-control" id="validationCustom01" placeholder="Enter AdministrativeWork Name" required />
+                        <label for="validationCustom01" className="form-label">Administrative Work Name <b style={{ color: "red" }} >*</b></label>
+                        <input type="text" className="form-control" id="validationCustom01" placeholder="Enter Administrative Work Name" required />
                         <div className="valid-feedback">
                             Looks good!
                         </div>
@@ -23,7 +23,7 @@ const AdministrativeWorkForm = () => {
                             <option value="3">employee Three</option>
                         </select>
                     </div>
-                    
+
                     <div className="">
                         <label for="validationCustom03" className="form-label">Start date</label>
                         <input type="date" className="form-control" id="validationCustom03" />
@@ -32,9 +32,9 @@ const AdministrativeWorkForm = () => {
                         <label for="validationCustom04" className="form-label">End Date</label>
                         <input type="date" className="form-control" id="validationCustom04" />
                     </div>
-                    
+
                     <div className="d-flex justify-content-end mt-3">
-                        <button className="btn btn-primary" type="submit">Add Administrative Work</button>
+                        <button className="btn btn-primary" type="submit">Save</button>
                     </div>
                 </form>
             </div>

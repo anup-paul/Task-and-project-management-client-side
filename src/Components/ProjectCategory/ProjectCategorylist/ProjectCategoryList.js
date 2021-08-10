@@ -16,7 +16,7 @@ const ProjectCategoryList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Project Category List</h2>
+                <h2 className="text-center my-4" ><b>Project Category List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-50 mt-3" >

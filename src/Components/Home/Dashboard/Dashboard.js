@@ -19,7 +19,7 @@ const Dashboard = () => {
                                     <li><Link to="/addEmployee" className="dropdown-item" >Add Employee</Link></li>
                                     <li><Link className="dropdown-item" >Suspended Employee</Link></li>
                                     <li><Link className="dropdown-item" >Former Employee</Link></li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link to="/teamList" className="dropdown-item" >Team List</Link></li>
                                     <li><Link to="/makeTeam" className="dropdown-item" >Make Team</Link></li>
                                 </ul>
@@ -30,8 +30,10 @@ const Dashboard = () => {
                                 <ul className="dropdown-menu btn btn-primary">
                                     <li><Link to="/projects" className="dropdown-item" >Project List</Link></li>
                                     <li><Link to="/addProject" className="dropdown-item" >Add Project</Link></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link to="/projectCategoryList" className="dropdown-item" >Project Category list</Link></li>
                                     <li><Link to="/addProjectCategory" className="dropdown-item" >Add Project Category</Link></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link className="dropdown-item" >Archive Project List</Link></li>
 
                                 </ul>
@@ -52,15 +54,15 @@ const Dashboard = () => {
                                 <Link className="nav-link dropdown-toggle active" data-bs-toggle="dropdown" role="button" aria-expanded="false"><b>Task</b></Link>
                                 <ul className="dropdown-menu btn btn-primary">
 
-                                    <li><Link to="/taskList" className="dropdown-item" >Task List</Link></li>
-                                    <li><Link to="/addTask" className="dropdown-item" >Add Task</Link></li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><Link to="/taskList" className="dropdown-item" >Project Task List</Link></li>
+                                    <li><Link to="/addTask" className="dropdown-item" >Add Project Task</Link></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link to="/AdministrativeTaskList" className="dropdown-item" >Administrative Task List</Link></li>
                                     <li><Link to="/addAdministrativeTask" className="dropdown-item" >Add Administrative Task</Link></li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link to="/temporaryTaskList" className="dropdown-item" >Temporary Task List</Link></li>
                                     <li><Link to="/addTemporaryTask" className="dropdown-item" >Add Temporary Task</Link></li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><hr className="dropdown-divider" /></li>
                                     <li><Link to="/permanentTaskList" className="dropdown-item" >Permanent Task List</Link></li>
                                     <li><Link to="/addPermanentTask" className="dropdown-item" >Add Permanent Task</Link></li>
 

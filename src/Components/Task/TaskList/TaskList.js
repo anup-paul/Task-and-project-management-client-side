@@ -17,7 +17,7 @@ const TaskList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Task List</h2>
+                <h2 className="text-center my-4" ><b>Project Task List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-75 mt-3" >
@@ -29,14 +29,14 @@ const TaskList = () => {
                         <button
                             className="btn btn-outline-primary"
                             onClick={(e) => handleAddTask(e)}
-                        > <FontAwesomeIcon icon={faPlus} /> Add Task
+                        > <FontAwesomeIcon icon={faPlus} /> Add Project Task
                         </button>
                     </div>
                     <table className="table mt-3">
                         <thead className="table-primary" >
                             <tr>
                                 <th scope="col">No.</th>
-                                <th scope="col">Task Name</th>
+                                <th scope="col">Project Task Name</th>
                                 <th scope="col">Assign Member</th>
                                 <th className="text-center" scope="col">Status</th>
                                 <th className="text-center" scope="col">Action</th>

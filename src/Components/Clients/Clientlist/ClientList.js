@@ -16,7 +16,7 @@ const ClientList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Client List</h2>
+                <h2 className="text-center my-4" ><b>Client List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-75 mt-3" >
@@ -37,10 +37,10 @@ const ClientList = () => {
                             <tr>
                                 <th scope="col"></th>
                                 <th scope="col">Client Name</th>
-                                <th scope="col">Phone Number</th>
+                                <th scope="col">Mobile Number</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Address</th>
-                                <th scope="col">Action</th>
+                                <th className="text-center" scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,7 +50,12 @@ const ClientList = () => {
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>@mdo</td>
-                                <td>Otto</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">Edit</option> 
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -58,7 +63,12 @@ const ClientList = () => {
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>@mdo</td>
-                                <td>Thornton</td>
+                                <td>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Action Type</option>
+                                        <option value="1">Edit</option> 
+                                    </select>
+                                </td>
                             </tr>
 
 

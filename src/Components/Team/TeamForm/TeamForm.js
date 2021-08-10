@@ -8,6 +8,7 @@ const TeamForm = () => {
         <div>
             <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
+                <h3 className="text-center mb-4" ><b>Make Team</b></h3>
                     <div className="">
                         <label for="validationCustom01" className="form-label">Team Name <b style={{ color: "red" }} >*</b></label>
                         <input type="text" className="form-control" id="validationCustom01" placeholder="Enter team Name" required />
@@ -15,7 +16,7 @@ const TeamForm = () => {
                             Looks good!
                         </div>
                     </div>
-                    <div className="d-flex justify-content-between" >
+                    <div className="d-flex justify-content-between mt-2" >
                         <div>
                             <label for="validationCustom02" className="form-label">Select team member</label>
                             <select className="form-select " id="validationCustom02" aria-label="Default select example">

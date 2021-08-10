@@ -36,8 +36,8 @@ const PermanentTaskList = () => {
                         <thead className="table-primary" >
                             <tr>
                                 <th scope="col"></th>
-                                <th scope="col">Permanent Task</th>
                                 <th scope="col">Employee</th>
+                                <th scope="col">Permanent Task</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>

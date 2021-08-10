@@ -15,7 +15,7 @@ const AdministrativeTaskList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Administrative Task List</h2>
+                <h2 className="text-center my-4" ><b>Administrative Task List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-75 mt-3" >

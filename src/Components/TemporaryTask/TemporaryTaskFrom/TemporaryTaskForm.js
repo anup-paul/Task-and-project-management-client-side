@@ -9,7 +9,7 @@ const TemporaryTaskForm = () => {
                         <h3 className="text-center mb-4" ><b>Add Temporary Task</b></h3>
                         <div className="">
                             <label for="validationCustom01" className="form-label">Temporary Task <b style={{ color: "red" }} >*</b></label>
-                            <input type="text" className="form-control" id="validationCustom01" placeholder="Enter Temporary Task" required />
+                            <textarea rows="4" type="text" className="form-control" id="validationCustom01" placeholder="Enter Temporary Task" required />
                             <div className="valid-feedback">
                                 Looks good!
                             </div>

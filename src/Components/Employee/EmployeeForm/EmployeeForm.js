@@ -5,6 +5,7 @@ const EmployeeForm = () => {
        <div>
            <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
+                <h3 className="text-center mb-4" ><b>Add Employee</b></h3>
                     <div className="">
                         <label for="validationCustom01" className="form-label">Employee Name <b style={{color:"red"}} >*</b></label>
                         <input type="text" className="form-control" id="validationCustom01" placeholder="Enter employee Name" required />
@@ -30,8 +31,8 @@ const EmployeeForm = () => {
                     </div>
 
                     <div className="">
-                        <label for="validationCustom04" className="form-label">Employee Phone number</label><b style={{color:"red"}} >*</b>
-                        <input type="number" className="form-control" id="validationCustom04" placeholder="Enter employee Phone number" />
+                        <label for="validationCustom04" className="form-label">Employee Mobile number</label><b style={{color:"red"}} >*</b>
+                        <input type="number" className="form-control" id="validationCustom04" placeholder="Enter employee Mobile number" />
                     </div>
                     <div className="">
                         <label for="validationCustom05" className="form-label">Employee email</label><b style={{color:"red"}} >*</b>

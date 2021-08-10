@@ -18,7 +18,7 @@ const ProjectList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Project List</h2>
+                <h2 className="text-center my-4"><b>Project List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-75 mt-3" >
@@ -42,7 +42,7 @@ const ProjectList = () => {
                                 <th scope="col">Assign Member</th>
                                 <th scope="col">Start Date</th>
                                 <th scope="col">End Date</th>
-                                <th scope="col">Action</th>
+                                <th className="text-center" scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>

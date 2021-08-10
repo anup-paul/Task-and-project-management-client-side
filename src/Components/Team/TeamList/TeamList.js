@@ -17,10 +17,10 @@ const TeamList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Team List</h2>
+                <h2 className="text-center my-4" ><b>Team List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
-                <div className="row w-75 mt-3" >
+                <div className="row w-50 mt-3" >
                     <div className="d-flex justify-content-between" >
                         <form className="d-flex">
                             <input className="form-control w-75 me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -38,13 +38,13 @@ const TeamList = () => {
                                 <th scope="col">No.</th>
                                 <th scope="col">Team Name</th>
                                 <th scope="col">Team Members</th>
-                                <th scope="col">Action</th>
+                                <th className="text-center" scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
+                                <td>Mark </td>
                                 <td>Otto (Role)</td>
                                 
                                 <td>

@@ -5,6 +5,7 @@ const ProjectForm = () => {
         <div>
             <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
+                <h3 className="text-center mb-4" ><b>Add Project</b></h3>
                     <div>
                         <label for="validationCustom11" className="form-label">Project Category</label>
                         <select className="form-select" id="validationCustom11" aria-label="Default select example">
@@ -52,7 +53,7 @@ const ProjectForm = () => {
                     </div>
                     <div className="">
                         <label for="validationCustom08" className="form-label">Value</label>
-                        <input type="number" className="form-control" id="validationCustom08" placeholder="Enter Sell value" />
+                        <input type="number" className="form-control" id="validationCustom08" placeholder="Enter value" />
                     </div>
 
                     <div className="">

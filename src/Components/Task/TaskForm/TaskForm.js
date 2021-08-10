@@ -6,8 +6,9 @@ const TaskForm = () => {
         <div>
             <div className="d-flex justify-content-center my-3" >
                 <form className="w-50  border border-primary border-4 p-5 needs-validation" novalidate>
+                    <h3 className="text-center mb-4" ><b>Add Project Task</b></h3>
                     <div>
-                        <label for="validationCustom01" className="form-label">Add Project</label>
+                        <label for="validationCustom01" className="form-label">Project</label>
                         <select className="form-select" id="validationCustom01" aria-label="Default select example">
                             <option selected> select project</option>
                             <option value="1">project One</option>
@@ -20,18 +21,18 @@ const TaskForm = () => {
                         <input type="date" className="form-control" id="validationCustom02" placeholder="Start date and time" />
                     </div>
                     <div className="">
-                        <label for="validationCustom03" className="form-label">Task</label>
-                        <textarea rows="4" type="text" className="form-control" id="validationCustom03" placeholder="Task" />
+                        <label for="validationCustom03" className="form-label">Project Task</label>
+                        <textarea rows="4" type="text" className="form-control" id="validationCustom03" placeholder="Project Task" />
                     </div>
                     <div className="">
                         <label for="validationCustom04" className="form-label">Assign</label>
                         <select className="form-select" id="validationCustom04" aria-label="Default select example">
-                            <option selected> select member</option>
+                            <option selected> select Team</option>
                             <option value="1">Employee One</option>
                             <option value="2">Employee Two</option>
                             <option value="3">Employee Three</option>
                         </select>
-                        
+
                     </div>
                     <div className="">
                         <label for="validationCustom05" className="form-label">End date and Time</label>

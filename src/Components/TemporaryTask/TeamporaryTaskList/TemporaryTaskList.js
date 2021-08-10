@@ -34,7 +34,7 @@ const TemporaryTaskList = () => {
                         <thead className="table-primary" >
                             <tr>
                                 <th scope="col"></th>
-                                <th scope="col">Project Category Name</th>
+                                <th scope="col">Temporary Task Name</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -47,7 +47,7 @@ const TemporaryTaskList = () => {
                                         <option selected>Action Type</option>
                                         <option value="1">Edit</option>
                                         <option value="2">Move to Project Task</option>
-                                        <option value="3">Move to Temporary Task</option>
+                                        <option value="3">Move to Administrative Task</option>
                                         <option value="4">Delete</option>
                                     </select>
                                 </td>
@@ -60,7 +60,7 @@ const TemporaryTaskList = () => {
                                         <option selected>Action Type</option>
                                         <option value="1">Edit</option>
                                         <option value="2">Move to Project Task</option>
-                                        <option value="3">Move to Temporary Task</option>
+                                        <option value="3">Move to Administrative Task</option>
                                         <option value="4">Delete</option>
                                     </select>
                                 </td>

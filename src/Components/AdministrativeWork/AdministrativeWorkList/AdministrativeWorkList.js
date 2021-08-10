@@ -16,7 +16,7 @@ const AdministrativeWorkList = () => {
     return (
         <>
             <div>
-                <h2 className="text-center my-4" >Administrative Work List</h2>
+                <h2 className="text-center my-4" ><b>Administrative Work List</b></h2>
             </div>
             <div className="d-flex justify-content-center" >
                 <div className="row w-75 mt-3" >
@@ -28,7 +28,7 @@ const AdministrativeWorkList = () => {
                         <button
                             className="btn btn-outline-primary"
                             onClick={(e) => handleAddAdministrativeWork(e)}
-                        > <FontAwesomeIcon icon={faPlus} /> Add AdministrativeWork
+                        > <FontAwesomeIcon icon={faPlus} /> Add Administrative Work
                         </button>
                     </div>
                     <table className="table mt-3">

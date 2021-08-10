@@ -9,7 +9,7 @@ const PermanentTaskForm = () => {
                         <h3 className="text-center mb-4" ><b>Add Permanent Task</b></h3>
                         <div className="">
                             <label for="validationCustom01" className="form-label">Permanent Task <b style={{ color: "red" }} >*</b></label>
-                            <input type="text" className="form-control" id="validationCustom01" placeholder="Enter Temporary Task" required />
+                            <textarea rows="4" type="text" className="form-control" id="validationCustom01" placeholder="Enter Permanent Task" required />
                             <div className="valid-feedback">
                                 Looks good!
                             </div>
@@ -17,7 +17,7 @@ const PermanentTaskForm = () => {
                         <div>
                             <label for="validationCustom02" className="form-label">Select Employee</label>
                             <select className="form-select " id="validationCustom02" aria-label="Default select example">
-                                <option selected> Employee</option>
+                                <option selected>Select Employee</option>
                                 <option value="1">Employee One</option>
                                 <option value="2">Employee Two</option>
                                 <option value="3">Employee Three</option>
